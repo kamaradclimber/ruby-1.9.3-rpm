@@ -21,6 +21,7 @@ Obsoletes: ruby-libs
 Obsoletes: ruby-irb
 Obsoletes: ruby-rdoc
 Obsoletes: ruby-devel
+Requires: libyaml
 
 %description
 Ruby is the interpreted scripting language for quick and easy
