@@ -11,7 +11,7 @@
     cd ~/rpmbuild/SPECS
     curl https://raw.github.com/kamaradclimber/ruby-1.9.3-rpm/master/ruby19.spec > ruby19.spec
     rpmbuild -bb ruby19.spec
-    rpm -Uvh ~/rpmbuild/RPMS/x86_64/ruby-1.9.3p0-1.ruby-1.9.3p194-1.i386.rpm
+    rpm -Uvh ~/rpmbuild/RPMS/x86_64/ruby-1.9.3p194-1.el6.x86_64.rpm
 
 **PROFIT!**
 
