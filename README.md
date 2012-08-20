@@ -1,7 +1,5 @@
 # What is this spec?
 
-This is a fork from https://github.com/imeyer/ruby-1.9.2-rpm.
-
 ### How to install
 
 #### RHEL/CentOS 5/6
@@ -9,11 +7,11 @@ This is a fork from https://github.com/imeyer/ruby-1.9.2-rpm.
     yum install -y rpm-build rpmdevtools
     rpmdev-setuptree
     cd ~/rpmbuild/SOURCES
-    wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p0.tar.gz
+    wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p194.tar.gz
     cd ~/rpmbuild/SPECS
     curl https://raw.github.com/rilindo/ruby-1.9.3-rpm/master/ruby19.spec > ruby19.spec
     rpmbuild -bb ruby19.spec
-    rpm -Uvh ~/rpmbuild/RPMS/x86_64/ruby-1.9.3p0-1.ruby-1.9.3p90-1.i386.rpm
+    rpm -Uvh ~/rpmbuild/RPMS/x86_64/ruby-1.9.3p0-1.ruby-1.9.3p194-1.i386.rpm
 
 **PROFIT!**
 
