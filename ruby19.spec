@@ -37,7 +37,7 @@ straight-forward, and extensible.
 %build
 export CFLAGS="$RPM_OPT_FLAGS -Wall -fno-strict-aliasing"
 # set to 1.5x number of CPU cores:
-export MAKEFLAGS='-j 6'
+export MAKEFLAGS='-j 2'
 
 %configure \
   --enable-shared \
