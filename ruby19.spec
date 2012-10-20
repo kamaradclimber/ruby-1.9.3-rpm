@@ -21,7 +21,9 @@ Obsoletes: ruby-libs
 Obsoletes: ruby-irb
 Obsoletes: ruby-rdoc
 Obsoletes: ruby-devel
+Obsoletes: rubygems
 Requires: libyaml
+Requires: libffi
 
 %description
 Ruby is the interpreted scripting language for quick and easy
@@ -34,6 +36,8 @@ straight-forward, and extensible.
 
 %build
 export CFLAGS="$RPM_OPT_FLAGS -Wall -fno-strict-aliasing"
+# set to 1.5x number of CPU cores:
+export MAKEFLAGS='-j 6'
 
 %configure \
   --enable-shared \
